@@ -128,23 +128,26 @@ const registrar = async (req, res) => {
         nombre,
         email,
         password,
-        token: generarId(),
+        // token: generarId(),
+        confirmado: 1
     });
 
-    //Enviar email de confirmacion
-    emailRegistro({
-        nombre: usuario.nombre,
-        email: usuario.email,
-        token: usuario.token
-    })
-
-
+    //! Enviar email de confirmacion: No se agrega para produccion
+    // emailRegistro({
+    //     nombre: usuario.nombre,
+    //     email: usuario.email,
+    //     token: usuario.token
+    // })
+    
     //Mostrar mensaje de confirmacion, NO TE ENVIA A ESA RUTA SOLO MUESTRA EL MENSAJE Y CONTENIDO
-    res.render('templates/mensaje',{
-        pagina: 'Cuenta Creada Correctamente',
-        mensaje: 'Hemos enviado un Email de confirmacion, presiona en el enlace'
+    // res.render('templates/mensaje',{
+    //     pagina: 'Cuenta Creada Correctamente',
+    //     mensaje: 'Hemos enviado un Email de confirmacion, presiona en el enlace',
+    //     // csrfToken: req.csrfToken(),
+    // });
+    res.render('auth/login',{
+        csrfToken: req.csrfToken(),
     });
-
 }
 
 //Función que comprueba una cuenta
