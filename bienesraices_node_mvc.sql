@@ -123,9 +123,9 @@ INSERT INTO `propiedades` (`id`, `titulo`, `descripcion`, `habitaciones`, `estac
 ('fb09cdef-2a18-4030-8bf7-8a00bbfe78a2', 'Cabaña fuera de la ciudad', 'Cabaña fuera de la ciudad para acampar un fin de semana!', 2, 3, 4, 'Jirón Río Chancay 472', '-11.975647329308273', '-76.9978004545067', 'esnanr3g6f81h4uk7i22.jpg', 1, '2023-07-10 00:46:20', '2023-07-12 04:32:16', 7, 5, 1);
 
 INSERT INTO `usuarios` (`id`, `nombre`, `email`, `password`, `token`, `confirmado`, `createdAt`, `updatedAt`) VALUES
-(1, 'Juan', 'juan@correo.com', '$2b$10$WkUCNrDtU8ZZykmHF5I5HO43pKYmMFtVJAtLFenqSHs2PUZcopzti', NULL, 1, '2023-07-07 05:35:02', '2023-07-07 05:35:02');
+(1, 'Juan', 'juan@correo.com', '123456', NULL, 1, '2023-07-07 05:35:02', '2023-07-07 05:35:02');
 INSERT INTO `usuarios` (`id`, `nombre`, `email`, `password`, `token`, `confirmado`, `createdAt`, `updatedAt`) VALUES
-(2, 'Maria', 'maria@gmail.com', '$2b$10$1cQ9vY4.CDbMlxi2S1nkOO43qG7aMlGJ72RPkJSpxEfsTTKeyy5ay', NULL, 1, '2023-07-11 00:00:29', '2023-07-11 00:00:43');
+(2, 'Maria', 'maria@gmail.com', '123456', NULL, 1, '2023-07-11 00:00:29', '2023-07-11 00:00:43');
 
 
 

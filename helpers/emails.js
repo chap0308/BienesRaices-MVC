@@ -22,7 +22,7 @@ const emailRegistro = async (datos) => {
         html: `
         <p>Hola: ${nombre}, comprueba tu cuenta en BienesRaices.com</p>
         <p>Tu cuenta ya esta lista, solo debes comprobarla en el siguiente enlace: 
-        <a href="${process.env.BACKEND_URL}:${process.env.PORT ?? 3000}/auth/confirmar/${token}">Confirmar Cuenta</a></p>
+        <a href="${process.env.BACKEND_URL}/auth/confirmar/${token}">Confirmar Cuenta</a></p>
 
         <p>Si tu no creaste esta cuenta, puedes ignorar este mensaje</p>
         `
@@ -51,7 +51,7 @@ const emailOlvidePassword = async (datos) => {
         html: `
         <p>Hola: ${nombre}, has solicitado restablecer tu contraseña en BienesRaices.com</p>
         <p>Ingresa al siguiente enlace para generar una nueva contraseña:
-        <a href="${process.env.BACKEND_URL}:${process.env.PORT ?? 3000}/auth/olvide-password/${token}">Reestablecer Password</a></p>
+        <a href="${process.env.BACKEND_URL}/auth/olvide-password/${token}">Reestablecer Password</a></p>
 
         <p>Si tu no solicitaste el cambio de contraseña, puedes ignorar este mensaje</p>
         `
