@@ -1,17 +1,17 @@
 #ENV:
-BD_NOMBRE=bienesraices_node_mvc
-BD_USER=root
-BD_PASS=
-BD_HOST=localhost
+- BD_NOMBRE=bienesraices_node_mvc
+- BD_USER=root
+- BD_PASS=
+- BD_HOST=localhost
 
-EMAIL_HOST=smtp.mailtrap.io
-EMAIL_PORT=
-EMAIL_USER=
-EMAIL_PASS=
+- EMAIL_HOST=smtp.mailtrap.io
+- EMAIL_PORT=
+- EMAIL_USER=
+- EMAIL_PASS=
 
-BACKEND_URL=http://localhost
+- BACKEND_URL=http://localhost
 
-JWT_SECRET=palabrasupersecretaaaaaaa
+- JWT_SECRET=palabrasupersecretaaaaaaa
 
 # COMANDOS IMPORTANTES(siempre iniciarlos despues de instalar todo lo de abajo):
 - npm run server
